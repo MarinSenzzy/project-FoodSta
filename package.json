@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "scss": "sass src/scss/main.scss css/main.css --watch"
+  },
+  "name": "project-foodsta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "devDependencies": {
+    "sass": "^1.97.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarinSenzzy/project-FoodSta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MarinSenzzy/project-FoodSta/issues"
+  },
+  "homepage": "https://github.com/MarinSenzzy/project-FoodSta#readme"
+}
