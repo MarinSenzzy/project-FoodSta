@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 h1,
 h2,
 h3,
@@ -31,7 +33,7 @@ img {
 
 body {
   margin: 0;
-  background-color: var(--white);
-  font-family: var(--font-family);
-  color: var(--black);
+  background-color: $white;
+  font-family: $font-family;
+  color: $black;
 }
