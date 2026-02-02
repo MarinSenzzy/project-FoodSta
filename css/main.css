@@ -1,27 +1,3 @@
-:root {
-  --button-green: #bbf330;
-  --dark-green: #7eb101;
-  --yellow-main: #ffe550;
-  --black: #2c2c2c;
-  --white: #fefefe;
-  --2: #a7ce47;
-  --tekst: #3d3d3d;
-  --tekst2: #969696;
-  --tekst3: #4a4a4a;
-}
-
-:root {
-  --font-family: "Roboto", sans-serif;
-  --second-family: "Kalam", sans-serif;
-  --third-family: "Inter", sans-serif;
-}
-
-:root {
-  --mobile: 320px;
-  --tablet: 776px;
-  --desktop: 1160px;
-}
-
 h1,
 h2,
 h3,
@@ -55,28 +31,92 @@ img {
 
 body {
   margin: 0;
-  background-color: var(--white);
-  font-family: var(--font-family);
-  color: var(--black);
+  background-color: #fefefe;
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
 }
 
 .container {
-  min-width: 320px;
-  max-width: 360px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
 }
-
-@media (min-width: --tablet) {
+@media (min-width: 768px) {
   .container {
-    max-width: 744px;
+    max-width: 768px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
   }
 }
 
-@media (min-width: --desktop) {
-  .container {
-    max-width: 1128px;
-  }
+.logo {
+  width: 66px;
+  height: 52px;
+}
+
+.btn {
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+}
+.btn.full-order {
+  border: none;
+  width: 98px;
+  height: 32px;
+  padding-block: 6px;
+  padding-inline: 17px;
+  background-color: #bbf330;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+}
+.header-container nav {
+  display: flex;
+  gap: 30px;
+}
+.header-container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.header-container nav ul li .nav-link {
+  padding: 28px 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+.header-container nav ul li .nav-link.nav-active {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #bbf330;
+}
+
+.hero-container {
+  display: flex;
+}
+.hero-container .hero-text-part {
+  width: 502px;
+}
+.hero-container .hero-text-part h1 {
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 28px;
+}
+.hero-container .hero-text-part p {
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+.hero-container .hero-img-part {
+  width: 680px;
 }
 
 /*# sourceMappingURL=main.css.map */

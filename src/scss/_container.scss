@@ -1,14 +1,19 @@
+@use "variables" as *;
+
 .container {
-  min-width: 320px;
-  max-width: 360px;
+  max-width: $mobile;
   margin: 0 auto;
   padding: 0 16px;
 
-  @media (min-width: --tablet) {
-    max-width: 744px;
+  // @media (min-width: $mobile-med) {
+  //   max-width: $mobile-med;
+  // }
+
+  @media (min-width: $tablet) {
+    max-width: $tablet;
   }
 
-  @media (min-width: --desktop) {
-    max-width: 1128px;
+  @media (min-width: $desktop) {
+    max-width: $desktop;
   }
 }

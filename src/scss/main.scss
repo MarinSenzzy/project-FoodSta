@@ -1,3 +1,6 @@
-@import "variables";
-@import "reset";
-@import "container";
+@use "reset";
+@use "container";
+@use "base";
+
+@use "./particle/header";
+@use "./particle/hero";

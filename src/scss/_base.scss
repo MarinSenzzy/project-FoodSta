@@ -1,0 +1,22 @@
+@use "./variables" as *;
+
+.logo {
+  width: 66px;
+  height: 52px;
+}
+
+.btn {
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+
+  &.full-order {
+    border: none;
+    width: 98px;
+    height: 32px;
+    padding-block: 6px;
+    padding-inline: 17px;
+    background-color: $button-green;
+  }
+}

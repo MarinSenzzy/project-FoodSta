@@ -1,0 +1,32 @@
+@use "../variables" as *;
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+  nav {
+    display: flex;
+    gap: 30px;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      li {
+        .nav-link {
+          padding: 28px 0;
+          font-weight: 400;
+          font-size: 14px;
+
+          &.nav-active {
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: $button-green;
+          }
+        }
+      }
+    }
+  }
+}
